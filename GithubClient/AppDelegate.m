@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TableViewController.h" 
+#import "GithubRepositoryTableViewController.h" 
 
 @interface AppDelegate ()
 
@@ -17,9 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    self.window.rootViewController = [[TableViewController alloc] init];
+    GithubRepositoryTableViewController *tableViewController = [[GithubRepositoryTableViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
     return YES;

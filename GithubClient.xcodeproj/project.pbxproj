@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		544C918B1B521ED600D40B19 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544C918A1B521ED600D40B19 /* WebViewController.m */; };
-		544C918C1B521ED600D40B19 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544C918A1B521ED600D40B19 /* WebViewController.m */; };
+		545DA7421B5333D400AF19DF /* GithubRepositoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545DA73F1B5333D400AF19DF /* GithubRepositoryTableViewController.m */; };
+		545DA7431B5333D400AF19DF /* GithubRepositoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545DA73F1B5333D400AF19DF /* GithubRepositoryTableViewController.m */; };
+		545DA7441B5333D400AF19DF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545DA7411B5333D400AF19DF /* WebViewController.m */; };
+		545DA7451B5333D400AF19DF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545DA7411B5333D400AF19DF /* WebViewController.m */; };
 		5493E30C1B51E5B500265F62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E30B1B51E5B500265F62 /* main.m */; };
 		5493E30F1B51E5B500265F62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E30E1B51E5B500265F62 /* AppDelegate.m */; };
-		5493E3121B51E5B500265F62 /* GithubRepositoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E3111B51E5B500265F62 /* GithubRepositoryTableViewController.m */; };
 		5493E3171B51E5B500265F62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5493E3161B51E5B500265F62 /* Images.xcassets */; };
 		5493E31A1B51E5B500265F62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5493E3181B51E5B500265F62 /* LaunchScreen.xib */; };
 		5493E3261B51E5B500265F62 /* GithubClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E3251B51E5B500265F62 /* GithubClientTests.m */; };
@@ -30,15 +31,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		544C91891B521ED600D40B19 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = ../WebViewController.h; sourceTree = "<group>"; };
-		544C918A1B521ED600D40B19 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = ../WebViewController.m; sourceTree = "<group>"; };
+		545DA73E1B5333D400AF19DF /* GithubRepositoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubRepositoryTableViewController.h; sourceTree = "<group>"; };
+		545DA73F1B5333D400AF19DF /* GithubRepositoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubRepositoryTableViewController.m; sourceTree = "<group>"; };
+		545DA7401B5333D400AF19DF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		545DA7411B5333D400AF19DF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		5493E3061B51E5B500265F62 /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5493E30A1B51E5B500265F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5493E30B1B51E5B500265F62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5493E30D1B51E5B500265F62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5493E30E1B51E5B500265F62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5493E3101B51E5B500265F62 /* GithubRepositoryTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GithubRepositoryTableViewController.h; path = ../GithubRepositoryTableViewController.h; sourceTree = "<group>"; };
-		5493E3111B51E5B500265F62 /* GithubRepositoryTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GithubRepositoryTableViewController.m; path = ../GithubRepositoryTableViewController.m; sourceTree = "<group>"; };
 		5493E3161B51E5B500265F62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5493E3191B51E5B500265F62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5493E31F1B51E5B500265F62 /* GithubClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,10 +70,10 @@
 		544C918D1B521F8800D40B19 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5493E3101B51E5B500265F62 /* GithubRepositoryTableViewController.h */,
-				5493E3111B51E5B500265F62 /* GithubRepositoryTableViewController.m */,
-				544C91891B521ED600D40B19 /* WebViewController.h */,
-				544C918A1B521ED600D40B19 /* WebViewController.m */,
+				545DA73E1B5333D400AF19DF /* GithubRepositoryTableViewController.h */,
+				545DA73F1B5333D400AF19DF /* GithubRepositoryTableViewController.m */,
+				545DA7401B5333D400AF19DF /* WebViewController.h */,
+				545DA7411B5333D400AF19DF /* WebViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -236,9 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5493E3311B521AD500265F62 /* GithubRepositoryTableViewCell.m in Sources */,
-				544C918B1B521ED600D40B19 /* WebViewController.m in Sources */,
-				5493E3121B51E5B500265F62 /* GithubRepositoryTableViewController.m in Sources */,
+				545DA7441B5333D400AF19DF /* WebViewController.m in Sources */,
 				5493E30F1B51E5B500265F62 /* AppDelegate.m in Sources */,
+				545DA7421B5333D400AF19DF /* GithubRepositoryTableViewController.m in Sources */,
 				5493E30C1B51E5B500265F62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,9 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545DA7431B5333D400AF19DF /* GithubRepositoryTableViewController.m in Sources */,
 				5493E3321B521AD500265F62 /* GithubRepositoryTableViewCell.m in Sources */,
-				544C918C1B521ED600D40B19 /* WebViewController.m in Sources */,
 				5493E3261B51E5B500265F62 /* GithubClientTests.m in Sources */,
+				545DA7451B5333D400AF19DF /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

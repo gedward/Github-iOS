@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GitHub-Mark"]];
+    
     self.title = @"Objective-C Repositories";
     [self fetchGithubRepositories];
     [self.tableView registerClass:[GithubRepositoryTableViewCell class] forCellReuseIdentifier:@"GithubCell"];

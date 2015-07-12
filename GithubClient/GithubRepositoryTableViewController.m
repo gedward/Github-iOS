@@ -35,7 +35,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSMutableURLRequest *request =
         [NSMutableURLRequest requestWithURL:[NSURL
-                                             URLWithString:@"https://api.github.com/search/repositories?q=language:objc&sort=stars&order=desc"]
+                                             URLWithString:@"https://api.github.com/search/repositories?q=language:objc&sort=stars&order=desc&per_page=100"]
                                 cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
                             timeoutInterval:30
          ];

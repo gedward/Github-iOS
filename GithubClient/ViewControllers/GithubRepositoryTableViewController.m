@@ -46,6 +46,11 @@
         NSURLResponse *urlResponse = nil;
         
         NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+        
+        if (response == nil) {
+            NSLog(@"There was an error, returning");
+            return;
+        }
         NSDictionary* responseDict = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:nil];
         
         NSLog(@"%@", responseDict);

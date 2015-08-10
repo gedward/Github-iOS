@@ -18,6 +18,8 @@
 		5493E3261B51E5B500265F62 /* GithubClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E3251B51E5B500265F62 /* GithubClientTests.m */; };
 		5493E3311B521AD500265F62 /* GithubRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E3301B521AD500265F62 /* GithubRepositoryTableViewCell.m */; };
 		5493E3321B521AD500265F62 /* GithubRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E3301B521AD500265F62 /* GithubRepositoryTableViewCell.m */; };
+		54E4AF8E1B783960002C2D73 /* GithubRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E4AF8D1B783960002C2D73 /* GithubRepository.m */; };
+		54E4AF901B784006002C2D73 /* MoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E4AF8F1B784006002C2D73 /* MoreTests.m */; };
 		54E7C96D1B6EFE2500172009 /* SampleData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54E7C96C1B6EFE2400172009 /* SampleData.txt */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,9 @@
 		5493E3251B51E5B500265F62 /* GithubClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubClientTests.m; sourceTree = "<group>"; };
 		5493E32F1B521AD500265F62 /* GithubRepositoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubRepositoryTableViewCell.h; sourceTree = "<group>"; };
 		5493E3301B521AD500265F62 /* GithubRepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubRepositoryTableViewCell.m; sourceTree = "<group>"; };
+		54E4AF8C1B783960002C2D73 /* GithubRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubRepository.h; sourceTree = "<group>"; };
+		54E4AF8D1B783960002C2D73 /* GithubRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubRepository.m; sourceTree = "<group>"; };
+		54E4AF8F1B784006002C2D73 /* MoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTests.m; sourceTree = "<group>"; };
 		54E7C96C1B6EFE2400172009 /* SampleData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SampleData.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +110,8 @@
 				5493E30E1B51E5B500265F62 /* AppDelegate.m */,
 				5493E32F1B521AD500265F62 /* GithubRepositoryTableViewCell.h */,
 				5493E3301B521AD500265F62 /* GithubRepositoryTableViewCell.m */,
+				54E4AF8C1B783960002C2D73 /* GithubRepository.h */,
+				54E4AF8D1B783960002C2D73 /* GithubRepository.m */,
 				5493E3161B51E5B500265F62 /* Images.xcassets */,
 				5493E3181B51E5B500265F62 /* LaunchScreen.xib */,
 				5493E3091B51E5B500265F62 /* Supporting Files */,
@@ -128,6 +135,7 @@
 			children = (
 				5493E3251B51E5B500265F62 /* GithubClientTests.m */,
 				5493E3231B51E5B500265F62 /* Supporting Files */,
+				54E4AF8F1B784006002C2D73 /* MoreTests.m */,
 			);
 			path = GithubClientTests;
 			sourceTree = "<group>";
@@ -242,6 +250,7 @@
 			files = (
 				5493E3311B521AD500265F62 /* GithubRepositoryTableViewCell.m in Sources */,
 				545DA7441B5333D400AF19DF /* WebViewController.m in Sources */,
+				54E4AF8E1B783960002C2D73 /* GithubRepository.m in Sources */,
 				5493E30F1B51E5B500265F62 /* AppDelegate.m in Sources */,
 				545DA7421B5333D400AF19DF /* GithubRepositoryTableViewController.m in Sources */,
 				5493E30C1B51E5B500265F62 /* main.m in Sources */,
@@ -254,6 +263,7 @@
 			files = (
 				545DA7431B5333D400AF19DF /* GithubRepositoryTableViewController.m in Sources */,
 				5493E3321B521AD500265F62 /* GithubRepositoryTableViewCell.m in Sources */,
+				54E4AF901B784006002C2D73 /* MoreTests.m in Sources */,
 				5493E3261B51E5B500265F62 /* GithubClientTests.m in Sources */,
 				545DA7451B5333D400AF19DF /* WebViewController.m in Sources */,
 			);

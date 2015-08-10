@@ -8,15 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "GithubRepository.h"
 
 @interface GithubClientTests : XCTestCase
-
+@property (nonatomic, strong) NSDictionary *sampleResponse;
 @end
 
 @implementation GithubClientTests
 
 - (void)setUp {
     [super setUp];
+    
+    self.sampleResponse = @{@"name": @"AwesomeMenu",
+                            @"description": @"is awesome",
+                            @"updated_at": @"2015-08-09T15:33:45Z"};
+    
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -25,16 +31,13 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
+- (void)testGithubRepository {
+    GithubRepository *repository = [[GithubRepository alloc] initWithDictionary:self.sampleResponse];
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+    XCTAssert(repository != nil, @"Repository is not nil");
+    
+    XCTAssert([repository.name isEqualToString:@"AwesomeMenu"], @"Name equals AwesomeMenu");
+    XCTAssert([repository.repositoryDescription isEqualToString:@"is awesome"], @"Repository description is awesome");
 }
 
 @end

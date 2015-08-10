@@ -6,12 +6,13 @@
 //  Copyright (c) 2015 Gerard Gonzalez. All rights reserved.
 //
 
+#import "GithubRepository.h"
 #import "GithubRepositoryTableViewController.h"
 #import "GithubRepositoryTableViewCell.h"
 #import "WebViewController.h"
 
 @interface GithubRepositoryTableViewController ()
-@property (nonatomic, strong) NSArray *githubRepositories;
+@property (nonatomic, strong) NSMutableArray *githubRepositories;
 @end
 
 @implementation GithubRepositoryTableViewController
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GitHub-Mark"]];
-    
+    self.githubRepositories = [[NSMutableArray alloc] init];
     self.title = @"Objective-C Repositories";
     [self fetchGithubRepositories];
     [self.tableView registerClass:[GithubRepositoryTableViewCell class] forCellReuseIdentifier:@"GithubCell"];
@@ -56,7 +57,12 @@
         
         NSLog(@"%@", responseDict);
         
-        self.githubRepositories = [responseDict objectForKey:@"items"];
+        NSArray *githubRepositoryDictionaries = [responseDict objectForKey:@"items"];
+        
+        for (NSDictionary *dictionary in githubRepositoryDictionaries) {
+            GithubRepository *githubRepository = [[GithubRepository alloc] initWithDictionary:dictionary];
+            [self.githubRepositories addObject:githubRepository];
+        }
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
@@ -77,9 +83,9 @@
 }
 
 - (void)configureCell:(GithubRepositoryTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *repositoryDictionary = [self.githubRepositories objectAtIndex:indexPath.row];
-    cell.textLabel.text = repositoryDictionary[@"name"];
-    cell.detailTextLabel.text = repositoryDictionary[@"description"];
+    GithubRepository *repo = [self.githubRepositories objectAtIndex:indexPath.row];
+    cell.textLabel.text = repo.name;
+    cell.detailTextLabel.text = repo.repositoryDescription;
 }
 
 #pragma mark - UITableViewDelegate

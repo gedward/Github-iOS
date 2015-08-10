@@ -18,6 +18,7 @@
 		5493E3261B51E5B500265F62 /* GithubClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E3251B51E5B500265F62 /* GithubClientTests.m */; };
 		5493E3311B521AD500265F62 /* GithubRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E3301B521AD500265F62 /* GithubRepositoryTableViewCell.m */; };
 		5493E3321B521AD500265F62 /* GithubRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493E3301B521AD500265F62 /* GithubRepositoryTableViewCell.m */; };
+		54E7C96D1B6EFE2500172009 /* SampleData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54E7C96C1B6EFE2400172009 /* SampleData.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5493E3251B51E5B500265F62 /* GithubClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubClientTests.m; sourceTree = "<group>"; };
 		5493E32F1B521AD500265F62 /* GithubRepositoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubRepositoryTableViewCell.h; sourceTree = "<group>"; };
 		5493E3301B521AD500265F62 /* GithubRepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubRepositoryTableViewCell.m; sourceTree = "<group>"; };
+		54E7C96C1B6EFE2400172009 /* SampleData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SampleData.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				5493E3181B51E5B500265F62 /* LaunchScreen.xib */,
 				5493E3091B51E5B500265F62 /* Supporting Files */,
 				544C918D1B521F8800D40B19 /* ViewControllers */,
+				54E7C96C1B6EFE2400172009 /* SampleData.txt */,
 			);
 			path = GithubClient;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5493E31A1B51E5B500265F62 /* LaunchScreen.xib in Resources */,
+				54E7C96D1B6EFE2500172009 /* SampleData.txt in Resources */,
 				5493E3171B51E5B500265F62 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

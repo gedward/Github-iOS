@@ -33,25 +33,26 @@
 
 - (void)fetchGithubRepositories {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSMutableURLRequest *request =
-        [NSMutableURLRequest requestWithURL:[NSURL
-                                             URLWithString:@"https://api.github.com/search/repositories?q=language:objc&sort=stars&order=desc&per_page=100"]
-                                cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
-                            timeoutInterval:30
-         ];
-        
-        [request setHTTPMethod: @"GET"];
-        
-        NSError *requestError;
-        NSURLResponse *urlResponse = nil;
-        
-        NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-        
-        if (response == nil) {
-            NSLog(@"There was an error, returning");
-            return;
-        }
-        NSDictionary* responseDict = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:nil];
+//        NSMutableURLRequest *request =
+//        [NSMutableURLRequest requestWithURL:[NSURL
+//                                             URLWithString:@"https://api.github.com/search/repositories?q=language:objc&sort=stars&order=desc&per_page=100"]
+//                                cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+//                            timeoutInterval:30
+//         ];
+//        
+//        [request setHTTPMethod: @"GET"];
+//        
+//        NSError *requestError;
+//        NSURLResponse *urlResponse = nil;
+//        
+//        NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+//        
+//        if (response == nil) {
+//            NSLog(@"There was an error, returning");
+//            return;
+//        }
+//        NSDictionary* responseDict = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:nil];
+        NSDictionary *responseDict = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SampleData" ofType:@".txt"]];
         
         NSLog(@"%@", responseDict);
         
